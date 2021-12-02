@@ -1,0 +1,5 @@
+Get ips from file and do full syn port scan:  
+cat ips.txt | xargs -i nmap -sS -vv -A -p0- -oA nmap_scan_syn_{} {} 
+
+full udp port scan:
+cat ips.txt | xargs -i nmap -sU -vv -A -p0- -oA nmap_scan_udp_{} {} 
