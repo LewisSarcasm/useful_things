@@ -3,3 +3,5 @@ cat ips.txt | xargs -i nmap -sS -vv -A -p0- -oA nmap_scan_syn_{} {}
 
 full udp port scan:
 cat ips.txt | xargs -i nmap -sU -vv -A -p0- -oA nmap_scan_udp_{} {} 
+
+This is useful if you have many IPs - nmap doesn't have pause functionality - if your scan breaks halfway through a big scan, this is not good! 
