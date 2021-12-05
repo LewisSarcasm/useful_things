@@ -1,6 +1,8 @@
 # Active Directory stuff
 
 #### net.exe
+This is limited in what can be displayed. 
+
 Following will enumerate all local accounts 
 ```bash
 net user
